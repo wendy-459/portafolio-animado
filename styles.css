@@ -155,8 +155,15 @@
     /* Projects Grid */
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(2, 1fr); /* Dos tarjetas por fila */
       gap: 40px;
+    }
+
+    /* Responsive: en pantallas pequeñas usar una columna */
+    @media (max-width: 860px) {
+      .projects {
+        grid-template-columns: 1fr;
+      }
     }
 
 
@@ -194,6 +201,9 @@
     .project img {
       width: 100%;
       display: block;
+      /* altura consistente — un poco más grande según petición */
+      height: clamp(360px, 48vh, 600px);
+      object-fit: cover;
       transition: transform 0.6s ease;
       will-change: transform;
       border-bottom: 3px solid #ff4e91;
