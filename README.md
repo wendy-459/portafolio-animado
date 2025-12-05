@@ -60,7 +60,5 @@ Chatbot educativo sobre seguridad informática.
 - 💼 LinkedIn: https://www.linkedin.com/feed/  
 - 🐙 GitHub: https://github.com/wendy-459  
 
----
 
-## 📁 Estructura del Proyecto
 
